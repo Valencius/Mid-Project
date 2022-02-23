@@ -38,15 +38,15 @@ public class Main {
 							do {
 								System.out.println("Input top speed [100 <= topSpeed <= 250]: ");
 								speed = scan.nextInt();
-							}while(speed < 99 || speed > 251);
+							}while(speed < 100 || speed > 250);
 							do {
 								System.out.println("Input gas capacity [30 <= gasCap <= 60]: ");
 								gas = scan.nextInt();
-							}while(gas < 29 || gas > 61);
+							}while(gas < 30 || gas > 60);
 							do {
 								System.out.println("Input wheel [4 <= gasCap <= 6]: ");
 								wheel = scan.nextInt();
-							}while(wheel < 3 || wheel > 7);
+							}while(wheel < 4 || wheel > 6);
 							scan.nextLine();
 							do {
 								System.out.println("Input type [SUV | Supercar | Minivan]: ");
@@ -71,19 +71,19 @@ public class Main {
 							do {
 								System.out.println("Input license:");
 								license = scan.nextLine();
-							}while(!license.matches("[A-Z] \\d\\d\\d\\d [A-Z][A-Z][A-Z]"));
+							}while(!license.matches("[A-Z] \\d{1,4} [A-Z]{1,3}"));
 							do {
 								System.out.println("Input top speed [100 <= topSpeed <= 250]: ");
 								speed = scan.nextInt();
-							}while(speed < 99 || speed > 251);
+							}while(speed < 100 || speed > 250);
 							do {
 								System.out.println("Input gas capacity [30 <= gasCap <= 60]: ");
 								gas = scan.nextInt();
-							}while(gas < 29 || gas > 61);
+							}while(gas < 30 || gas > 60);
 							do {
 								System.out.println("Input wheel [2 <= gasCap <= 3]: ");
 								wheel = scan.nextInt();
-							}while(wheel < 1 || wheel > 4);
+							}while(wheel < 2 || wheel > 3);
 							scan.nextLine();
 							do {
 								System.out.println("Input type [Automatic | Manual]: ");
